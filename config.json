@@ -1,0 +1,5 @@
+{
+    "TOKEN": "Discord bot token",
+    "CHANNELID" : 0,
+    "BOT_PREFIXES" : ["+"]
+}
