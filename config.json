@@ -1,4 +1,10 @@
 {
+    "#": "Minecraft settings",
+    "EMAIL": "email@email.com",
+    "PASSWORD": "password",
+    "SERVER_IP": "6b9t.fit",
+
+    "#": "Discord bot settings. Set DISCORD to false to disable Discord support.",
     "TOKEN": "Discord bot token",
     "CHANNELID" : 0,
     "BOT_PREFIXES" : ["+"]

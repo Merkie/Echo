@@ -19,16 +19,20 @@ from bots.util import parse_chat_item, parse_message, DiscordBotThread
 from collections import deque
 
 
+
 def get_options():
+    with open('config.json') as f:
+        configData = json.loads(f.read())
+
     parser = OptionParser()
 
-    parser.add_option("-u", "--username", dest="username", default=None,
+    parser.add_option("-u", "--username", dest="username", default=configData["EMAIL"],
                       help="username to log in with")
 
-    parser.add_option("-p", "--password", dest="password", default=None,
+    parser.add_option("-p", "--password", dest="password", default=configData["PASSWORD"],
                       help="password to log in with")
 
-    parser.add_option("-s", "--server", dest="server", default=None,
+    parser.add_option("-s", "--server", dest="server", default=configData["SERVER_IP"],
                       help="server host or host:port "
                            "(enclose IPv6 addresses in square brackets)")
 
